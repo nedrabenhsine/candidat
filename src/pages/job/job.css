@@ -1,0 +1,98 @@
+body {
+    font-family: arial;
+    background: lightpink;
+   margin-top: 150px; 
+
+    }
+    .logo {
+    border: 1px solid #f6f6f6
+    }
+    .logo img {
+    width: 60px;
+    height: 60px
+    }
+    .card {
+    display: block;
+    padding: 3vh 2vh 7vh 5vh;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 500px;
+    
+    }
+    .card span{
+        font-size:15px;
+        color: #5f0979;
+        font-weight: bold
+        
+        }
+    .header {
+    margin-bottom: 5vh;
+    margin-right: 2vh;
+    float: right;
+    margin-left: auto
+    }
+    .far {
+    color: rgba(15, 198, 239, 0.97) !important;
+    font-size: 16px !important
+    }
+    p.heading {
+    font-weight: bold;
+    font-size: 25px
+    }
+    p.text-muted {
+    font-size: 17px;
+    font-weight: bold;
+    color: #a1a7ae !important
+    }
+    p.jjjjj {
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .btn-sm {
+    border-radius: 8px
+    }
+    .fas.fa-users {
+    color: rgba(15, 198, 239, 0.97) !important
+    }
+    .mutual span {
+    font-size: 14px;
+    color: #adb5bd;
+    font-weight: bold
+    }
+    .btn-primary.btn-lg {
+    border-radius: 30px;
+    width: 90%;
+    border: none;
+    background: #8c02e3
+    }
+    .btn-dark.btn-lg {
+    border-radius: 30px;
+    width: 90%;
+    border: none;
+    background: #dee2e6
+    }
+    .btn-dark span {
+    font-size: 14px;
+    text-align: center;
+    color: #0000008c;
+    font-weight: bold
+    }
+    .btn-primary span {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold
+    }
+    .btn-outline-danger {
+        color: #c3c1c8;
+        border-color: var(--bs-white);
+    }
+    .btn-outline-success {
+        color: var(--bs-indigo);
+        border-color: var(--bs-light);
+    }
+ 
