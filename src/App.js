@@ -10,6 +10,7 @@ import condidacy from './pages/condidacy';
 import Job from './pages/job/Job';
 
 function App() {
+  console.log("condidat");
   return (
     <div className="App">
       <Router>

@@ -19,7 +19,7 @@ const Home = () => {
                                 <div className="pt-3">
                                     <form>
                                         <div className="input-group w-xl-75 w-xxl-50 d-flex flex-end-center">
-                                            <input className="form-control rounded-pill shadow-lg border-0" id="formGroupExampleInput" type="text" placeholder="Seacrh by skill, company and job" /><img className="input-box-icon me-2" src="assets/img/illustrations/search.png" width={30} alt />
+                                            <input className="form-control rounded-pill shadow-lg border-0" id="formGroupExampleInput" type="text" placeholder="Seacrh by skill, company and job" /><img className="input-box-icon me-2" src="assets/img/illustrations/search.png" width={30} alt="" />
                                         </div>
                                     </form>
                                 </div>
@@ -33,7 +33,7 @@ const Home = () => {
                     {/*/.bg-holder*/}
                     <div className="container">
                         <div className="row flex-center">
-                            <div className="col-md-5 order-md-0 text-center text-md-start"><img className="img-fluid mb-4" src="assets/img/illustrations/passion.png" width={450} alt /></div>
+                            <div className="col-md-5 order-md-0 text-center text-md-start"><img className="img-fluid mb-4" src="assets/img/illustrations/passion.png" width={450} alt="" /></div>
                             <div className="col-md-5 text-center text-md-start">
                                 <h6 className="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Trouvez votre passion <br />et réussir</h6>
                                 <p className="my-4 pe-xl-8">  trouver un emploi qui correspond à vos intérêts et à vos talents. Un salaire élevé n'est pas la priorité absolue. Plus important encore, vous pouvez travailler selon le désir de votre cœur.</p>
@@ -50,10 +50,10 @@ const Home = () => {
                         <section className="py-8">
                             <div className="container">
                                 <div className="row flex-center">
-                                    <div className="col-md-5 order-md-1 text-center text-md-end"><img className="img-fluid mb-4" src="assets/img/illustrations/jobs.png" width={450} alt /></div>
+                                    <div className="col-md-5 order-md-1 text-center text-md-end"><img className="img-fluid mb-4" src="assets/img/illustrations/jobs.png" width={450} alt="" /></div>
                                     <div className="col-md-5 text-center text-md-start">
                                         <h6 className="fw-bold fs-2 fs-lg-3 display-3 lh-sm">beaucoup d'emplois,<br />  trouvailles celui qui te convient</h6>
-                                   
+
                                     </div>
                                 </div>
                             </div>
@@ -71,21 +71,21 @@ const Home = () => {
                     </div>
                     {/*/.bg-holder*/}
                     <div className="container">
-                       
-                        
+
+
                     </div>
                 </section>
                 {/* ============================================*/}
                 {/* <section> begin ============================*/}
                 <section className="py-8">
                     <div className="container">
-                        
+
                     </div>
                     {/* end of .container*/}
                 </section>
                 {/* <section> close ============================*/}
                 {/* ============================================*/}
-                <section className="py-0"><img className="w-100" src="assets/img/illustrations/come-on-join.png" alt />
+                <section className="py-0"><img className="w-100" src="assets/img/illustrations/come-on-join.png" alt="" />
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-12 text-center">
@@ -98,7 +98,7 @@ const Home = () => {
                 <section className="py-8">
                     <div className="container-lg">
                         <div className="row flex-center">
-                            
+
                             <div className="col-lg-4 position-relative mt-n5 mt-md-n4"><a className="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span className="carousel-control-prev-icon" aria-hidden="true" /><span className="visually-hidden">Previous</span></a><a className="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span className="carousel-control-next-icon" aria-hidden="true" /><span className="visually-hidden">Next</span></a></div>
                         </div>
                         <div className="row flex-center">
@@ -109,7 +109,7 @@ const Home = () => {
                                             <div className="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -146,7 +146,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -183,7 +183,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -224,7 +224,7 @@ const Home = () => {
                                             <div className="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -261,7 +261,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -298,7 +298,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -339,7 +339,7 @@ const Home = () => {
                                             <div className="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -376,7 +376,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">
@@ -413,7 +413,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="col-md-4 mb-8 mb-md-0">
                                                     <div className="card card-span h-100 shadow-lg">
-                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt /></div>
+                                                        <div className="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
                                                         <div className="card-body d-flex flex-column flex-center py-6">
                                                             <div className="my-4">
                                                                 <ul className="list-unstyled list-inline">

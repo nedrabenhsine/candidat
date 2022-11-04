@@ -4,6 +4,7 @@ import { Form, Input } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload, Button } from 'antd';
 const { Dragger } = Upload;
+
 const condidacy = () => {
 
     const props = {
@@ -29,7 +30,6 @@ const condidacy = () => {
             console.log('Dropped files', e.dataTransfer.files);
         },
     };
-
     return (
         <div>
             <section className="py-5">
