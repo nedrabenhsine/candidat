@@ -1,10 +1,17 @@
 import axios from "axios";
 import { useState } from "react";
-import jwt_decode from "jwt-decode";
 import "./index.css";
 
 const Signup = () => {
-  const [data, setData] = useState({ username: "", password: "" });
+  const [data, setData] = useState({
+    firstname: "",
+    username: "",
+    lastname: "",
+    password: "",
+    adress: "",
+    telephone: "",
+    role: 3,
+  });
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
   };
@@ -13,16 +20,9 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:5000/auth/login`, data)
+      .post(`http://localhost:5000/users`, data)
       .then((res) => {
-        console.log("res of : ", res.data.access_token);
-        var decoded = jwt_decode(res.data.access_token);
-        console.log(decoded);
-        localStorage.setItem("token", res.data.access_token);
-        setData(res.data);
-        if (decoded.role === "admin") {
-          window.location = "/dashboard";
-        }
+        window.location = "/login";
       })
       .catch((err) => {
         console.log(err.response);
@@ -33,8 +33,8 @@ const Signup = () => {
       <div class="inner-header flex">
         <section>
           <div className="row">
-            <div className="col-4 mx-auto">
-              <div className="mt-4">
+            <div className="col-4 mx-auto ">
+              <div className="mt-1">
                 <div className="pb-0 text-left ">
                   <img
                     class="size-96 company-logo bg-white"
@@ -42,40 +42,91 @@ const Signup = () => {
                     _v-ab01d028=""
                     src="https://img.jobi.tn/0796ce39-f07d-bf64-07c0-d2eb7c00ca22/version/crop/50x50/0-0/"
                   />
-                  <h3 className="font-weight-bolder text-info text-gradient">
+                  <h3 className="font-weight-bolder text-info text-gradient mb-1">
                     Welcome back
                   </h3>
-                  <p className="mb-0">
-                    Enter votre email et mot de passe pour sign in
+                  <p className="mb-2">
+                    remplissez le formulaire pour vous inscrire
                   </p>
                 </div>
                 <div className="">
                   <form onSubmit={handleSubmit}>
-                    <label> nom d'utilisateur</label>
-                    <div className="mb-3">
-                      <input
-                        type="username"
-                        className="form-control"
-                        placeholder="username"
-                        aria-label="username"
-                        name="username"
-                        onChange={handleChange}
-                      />
+                    <div className="row">
+                      <div className="col">
+                        <label>prénom</label>
+                        <div className="mb-1">
+                          <input
+                            type="lastname"
+                            className="form-control"
+                            placeholder="lastname"
+                            aria-label="lastname"
+                            name="lastname"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <label>nom</label>
+                        <div className="mb-1">
+                          <input
+                            type="firstname"
+                            className="form-control"
+                            placeholder="firstname"
+                            aria-label="firstname"
+                            name="firstname"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <label>email</label>
+                        <div className="mb-1">
+                          <input
+                            type="username"
+                            className="form-control"
+                            placeholder="username"
+                            aria-label="username"
+                            name="username"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+                      <div className="col">
+                        <label>adress</label>
+                        <div className="mb-1">
+                          <input
+                            type="adress"
+                            className="form-control"
+                            placeholder="adress"
+                            aria-label="adress"
+                            name="adress"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <label>téléphone mobile</label>
+                        <div className="mb-1">
+                          <input
+                            type="telephone"
+                            className="form-control"
+                            placeholder="telephone"
+                            aria-label="telephone"
+                            name="telephone"
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <label>mot de passe</label>
+                        <div className="mb-1">
+                          <input
+                            type="password"
+                            className="form-control"
+                            placeholder="Password"
+                            name="password"
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <label>mot de passe</label>
-                    <div className="mb-3">
-                      <input
-                        type="password"
-                        className="form-control"
-                        placeholder="Password"
-                        name="password"
-                        onChange={handleChange}
-                      />
-                    </div>
+
                     <div className="text-center">
                       <button
                         type="submit"
-                        className="btn bg-gradient-info w-100 mt-4 mb-0"
+                        className="btn bg-info w-100 mt-1 mb-0 text-white"
                       >
                         Sign in
                       </button>

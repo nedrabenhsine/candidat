@@ -8,8 +8,6 @@ const Login = () => {
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
   };
-
-  console.log(data);
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
@@ -20,8 +18,8 @@ const Login = () => {
         console.log(decoded);
         localStorage.setItem("token", res.data.access_token);
         setData(res.data);
-        if (decoded.role === "admin") {
-          window.location = "/dashboard";
+        if (decoded.role === "condidat") {
+          window.location = "/profile";
         }
       })
       .catch((err) => {
@@ -42,10 +40,10 @@ const Login = () => {
                     _v-ab01d028=""
                     src="https://img.jobi.tn/0796ce39-f07d-bf64-07c0-d2eb7c00ca22/version/crop/50x50/0-0/"
                   />
-                  <h3 className="font-weight-bolder text-info text-gradient">
+                  <h3 className="font-weight-bolder text-info text-gradient mb-0">
                     Welcome back
                   </h3>
-                  <p className="mb-0">
+                  <p className="mb-4">
                     Enter votre email et mot de passe pour sign in
                   </p>
                 </div>
@@ -75,7 +73,7 @@ const Login = () => {
                     <div className="text-center">
                       <button
                         type="submit"
-                        className="btn bg-gradient-info w-100 mt-4 mb-0"
+                        className="btn bg-info w-100 mt-1 mb-0 text-white"
                       >
                         Sign in
                       </button>
