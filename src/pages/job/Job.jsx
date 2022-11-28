@@ -193,19 +193,7 @@ const Job = () => {
                                       >
                                         <Input />
                                       </Form.Item>
-                                      <Form.Item
-                                        name="phone"
-                                        label="Téléphone"
-                                        rules={[
-                                          {
-                                            required: true,
-                                            message:
-                                              "Please input your Téléphone number!",
-                                          },
-                                        ]}
-                                      >
-                                        <Input />
-                                      </Form.Item>
+                       
                                       <Form.Item
                                         name="Cv"
                                         label="Cv"

@@ -44,27 +44,10 @@ const Condidacy = () => {
             >
               <Input />
             </Form.Item>
-            <Form.Item
-              name="lastname"
-              label="Prénom"
-              rules={[
-                { required: true, message: "Please input your username!" },
-              ]}
-            >
-              <Input />
-            </Form.Item>
+      
             <Form.Item
               name="email"
               label="Email"
-              rules={[
-                { required: true, message: "Please input your username!" },
-              ]}
-            >
-              <Input />
-            </Form.Item>
-            <Form.Item
-              name="phone"
-              label="Téléphone"
               rules={[
                 { required: true, message: "Please input your username!" },
               ]}
